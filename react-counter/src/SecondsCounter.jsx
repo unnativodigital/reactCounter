@@ -13,16 +13,16 @@ function SecondsCounter() {
   }, []);
 
   return (
-    <div className="BigCounter d-flex fs-1" style={{ borderRadius: '12px', border: 'solid 12px #212223', background: 'black' }}>
-      <div>
-      <i className="fa-solid fa-clock" style={{fontSize: '230px', marginTop:'45%', color : 'white' }}>:</i>
-      </div>
-      <div className="d-flex" style={{ fontSize: '300px', color: 'white' }}>
-        <div className="seconds p-2">
-          {seconds.toString().padStart(5, '0')}
-        </div>
-      </div>
+<div className="BigCounter d-flex align-items-center justify-content-center" style={{ borderRadius: '12px', border: 'solid 12px #212223', background: 'black', padding: '10px', width: '100%' }}>
+  <i className="fa-solid fa-clock" style={{ fontSize: '15vw', color: 'white', marginRight: '10px' }}></i>
+  <div className="d-flex" style={{ fontSize: '20vw', color: 'white' }}>
+    <div className="seconds p-2">
+      {seconds.toString().padStart(6, '0')}
     </div>
+  </div>
+</div>
+
+
   );
 }
 
